@@ -1,3 +1,9 @@
+"""
+@ MAIN all algorithm neural networking
+@ dq
+@ Github: github.com/DoanCongQui
+"""
+
 from lib import NeuralNertwork
 
 import numpy as np

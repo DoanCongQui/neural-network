@@ -1,3 +1,9 @@
+"""
+@ LIBRARY all algorithm neural networking
+@ dq
+@ Github: github.com/DoanCongQui
+"""
+
 import numpy as np
 from rich.console import Console
 from rich.table import Table
