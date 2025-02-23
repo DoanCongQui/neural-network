@@ -52,6 +52,24 @@ classdef neuralModel
                 
             end
         end
+
+        function plot2D(self, x1, x2, tle)
+            self.X = self.X(end-1:end, :);
+            figure; hold on;
+            for i = 1:length(self.d)
+                if self.d(i) == 1
+                    plot(self.X(1, i), self.X(2, i), 'bs', 'MarkerSize', 10, 'MarkerFaceColor', 'b'); 
+                else
+                    plot(self.X(1, i), self.X(2, i), '^r', 'MarkerSize', 10, 'MarkerFaceColor', 'r');
+                end
+            end
+
+            % Hien thi bieu do truc quan hoa
+            xlabel(x1);
+            ylabel(x2);
+            title(tle);
+            grid on; hold off;
+        end
     end
     
 end
