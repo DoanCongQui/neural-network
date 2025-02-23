@@ -71,7 +71,7 @@ class NeuralNertwork:
                 E = E + 0.5 * (self.d[i] - y) ** 2
 
                 epoch_data.append(
-                    [str(i), f"{net:.2f}", str(y), str(self.W), f"{E:.1f}"]
+                    [str(i+1), f"{net:.3f}", str(y), str(self.W), f"{E:.1f}"]
                 )
 
             # Create table data

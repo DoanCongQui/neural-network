@@ -42,6 +42,7 @@ classdef neuralModel
                     
                     fprintf('\nk = %d\nW =\n', i)
                     disp(self.W)
+                    fprintf('E = %.2f\n', E);
                 end
                 epoch = epoch + 1;
                 fprintf('\nEpoch: %d, Error: %f\n-----------------------\n', epoch, E)
